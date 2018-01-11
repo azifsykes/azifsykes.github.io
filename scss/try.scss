@@ -269,7 +269,7 @@ header {
 
 	.details {
 		max-width: 550px;
-		margin: 200px auto 0;
+		margin: 100px auto 0;
 	}
 
 	.slider {
@@ -488,6 +488,28 @@ header {
 }
 
 
+
+/***************************/
+/******   ANIMATION   ******/
+/***************************/
+
+.module {
+  position: relative;
+}
+
+.come-in {
+  transform: translateY(200px);
+  animation: come-in 1.5s ease forwards;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
 
 /***************************/
 /****** MEDIA QUERIES ******/
